@@ -40,9 +40,9 @@ function () {
     key: "isAdmin",
     value: function isAdmin() {
       if (this.admin) {
-        return "O usuario ".concat(this.email, " \xE9 um administrador"); //return true
+        return "O usuario ".concat(this.email, " \xE9 um administrador");
       } else {
-        return "O usuario ".concat(this.email, " n\xE3o \xE9 um administrador"); //return false
+        return "O usuario ".concat(this.email, " n\xE3o \xE9 um administrador");
       }
     }
   }]);
@@ -75,3 +75,41 @@ var Adm1 = new Admin('email@teste.com', 'senha123');
 console.log(User1.isAdmin()); // false
 
 console.log(Adm1.isAdmin()); // true
+// Exeerciocio 2.1
+
+var usuarios = [{
+  nome: 'Diego',
+  idade: 23,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Gabriel',
+  idade: 15,
+  empresa: 'Rocketseat'
+}, {
+  nome: 'Lucas',
+  idade: 30,
+  empresa: 'Facebook'
+}];
+var idades = usuarios.map(function (item) {
+  return item.idade;
+});
+console.log(idades); // Exercicio  2.2
+
+var usuario = usuarios.filter(function (item) {
+  return item.empresa == 'Rocketseat' && item.idade > 18;
+});
+console.log(usuario); // Exercicio 2.3
+
+var empresa = usuarios.find(function (item) {
+  return item.empresa == 'Google';
+});
+console.log(empresa); // Exercicio 2.4
+
+var user = usuarios.map(function (item) {
+  item.idade *= 2;
+  return item;
+});
+var result = user.filter(function (item) {
+  return item.idade <= 50;
+});
+console.log(result);
