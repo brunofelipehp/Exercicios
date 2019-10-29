@@ -113,3 +113,8 @@ var result = user.filter(function (item) {
   return item.idade <= 50;
 });
 console.log(result);
+var arr = [1, 2, 3, 4, 5];
+var resultado = arr.map(function (item) {
+  return item + 10;
+});
+console.log(resultado);

@@ -1,3 +1,85 @@
+
+// Exercicio 3.4
+
+const promise = () => {
+    return new Promise((resolve, reject) =>{
+        return resolve();
+    });
+};
+
+console.log(promise());
+
+
+
+
+/*
+// Exercicio 3.3
+
+const nome = "Diego";
+const idade = 23;
+
+const mostraUsuario = (nome = 'Diego', idade = 18) => {
+    return {nome, idade}
+}
+
+console.log(mostraUsuario())
+
+// Exercicio 3.2
+
+const usuario = { nome: 'Diego', idade: 23 };
+
+const mostraUsuario  = () => usuario.idade;
+
+console.log(mostraUsuario());
+
+// Execicio 3.1
+const arr = [1, 2, 3, 4, 5];
+
+ const resultado = arr.map(item => item + 10);
+
+// Exercicio 2.4
+
+const user = usuarios.map(function (item) {
+    item.idade *= 2
+    return item
+});
+
+const result = user.filter(function (item) {
+    return item.idade <= 50
+});
+
+console.log(result);
+
+// Exercicio 2.3
+
+const empresa = usuarios.find(function (item) {
+    return item.empresa == 'Google'
+});
+
+console.log(empresa);
+
+// Exercicio  2.2
+const usuario = usuarios.filter(function (item) {
+    return item.empresa == 'Rocketseat' && item.idade > 18;
+});
+
+console.log(usuario);
+
+// Exeerciocio 2.1
+const usuarios = [
+    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
+    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
+    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
+];
+
+const idades = usuarios.map(function (item) {
+    return item.idade;
+});
+
+console.log(idades);
+
+// Exercicio 01
+
 class Usuario {
 
     constructor(email, senha) {
@@ -35,44 +117,11 @@ const Adm1 = new Admin('email@teste.com', 'senha123');
 console.log(User1.isAdmin()) // false
 console.log(Adm1.isAdmin()) // true
 
-// Exeerciocio 2.1
-const usuarios = [
-    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
-    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
-    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
-];
-
-const idades = usuarios.map(function (item) {
-    return item.idade;
-});
-
-console.log(idades);
-
-// Exercicio  2.2
-const usuario = usuarios.filter(function (item) {
-    return item.empresa == 'Rocketseat' && item.idade > 18;
-});
-
-console.log(usuario);
-
-// Exercicio 2.3
-
-const empresa = usuarios.find(function (item) {
-    return item.empresa == 'Google'
-});
-
-console.log(empresa);
+*/
 
 
-// Exercicio 2.4
 
-const user = usuarios.map(function (item) {
-    item.idade *= 2
-    return item
-});
 
-const result = user.filter(function (item) {
-    return item.idade <= 50
-});
 
-console.log(result);
+
+
