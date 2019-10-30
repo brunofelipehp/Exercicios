@@ -1,9 +1,22 @@
 "use strict";
 
-//Execicio 06
-var usuario = 'Diego';
+// Exercicio 07
+var nome = 'Diego';
 var idade = 23;
-console.log("O usu\xE1rio ' ".concat(usuario, " ' possui ' ").concat(idade, " ' anos"));
+var usuario = {
+  nome: nome,
+  idade: idade,
+  cidade: 'Rio do Sul'
+};
+console.log(usuario);
+/*
+//Execicio 06
+
+const usuario = 'Diego';
+const idade = 23;
+console.log(`O usuário ' ${usuario} ' possui ' ${idade} ' anos`);
+
+
 /*
 // Exercicio 5.2
 const usuario = {
