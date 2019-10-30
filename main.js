@@ -1,4 +1,29 @@
 
+
+// Exercicio 4.2
+function mostraInfo({nome, idade}) {
+    return `${nome} tem ${idade} anos.`;
+   }
+ console.log(mostraInfo({ nome: 'Diego', idade: 23 }))
+
+
+
+/*
+// exercicio 4.1
+const empresa = {
+    nome: 'Rocketseat',
+    endereco: {
+    cidade: 'Rio do Sul',
+    estado: 'SC',
+    }
+   };
+
+ const {nome, endereco: {cidade, estado}} = empresa;
+
+ console.log(nome);
+ console.log(cidade);
+ console.log(estado);
+
 // Exercicio 3.4
 
 const promise = () => {
@@ -9,10 +34,6 @@ const promise = () => {
 
 console.log(promise());
 
-
-
-
-/*
 // Exercicio 3.3
 
 const nome = "Diego";
