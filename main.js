@@ -1,6 +1,11 @@
+//Execicio 06
+
+const usuario = 'Diego';
+const idade = 23;
+console.log(`O usuário ' ${usuario} ' possui ' ${idade} ' anos`);
 
 
-
+/*
 // Exercicio 5.2
 const usuario = {
     nome: 'Diego',
