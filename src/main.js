@@ -1,1 +1,1 @@
-alert("webpack configurado")
+alert("webpack  -- configurado")
