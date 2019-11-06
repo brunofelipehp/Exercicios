@@ -1,8 +1,32 @@
 import axios from 'axios';
 
+class Github {
+     static async  getRepositories(repo) {
+       try {
+
+        const response = await axios.get(`https://api.github.com/repos/${repo}`);
+        console.log(response.data);
+
+       } catch (error) {
+           
+        console.log('Repositorio não existes');
+       }
+  
+
+   
+   }
+}
+   Github.getRepositories('brunofelipehp/Exercicios');
+   Github.getRepositories('rocketseat/dslkvmskv');
+
+
+
+
+
+/*
+
 async function getUserFromGithub(user) {
     try {
-
         const response = await axios.get(`https://api.github.com/users/${user}`)
         console.log(response.data);
 
