@@ -1,6 +1,18 @@
-import ClasseUsuario,{idade as iaddeUsuario} from './functions';
+// Funão delay aciona o .then após 1s
+const delay = () => new Promise(resolve => setTimeout(resolve, 3000));
 
- ClasseUsuario.info();
 
+async function umPorSegundo() {
+  
+    await delay()
+    console.log('1s')
 
- console.log(iaddeUsuario)
+    await delay()
+    console.log('2s')
+
+    await delay()
+    console.log('3s')
+
+   }
+   umPorSegundo();
+  
