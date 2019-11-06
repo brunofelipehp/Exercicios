@@ -1,5 +1,23 @@
 import axios from 'axios';
 
+const buscaUsuario = async (user)  =>  {
+
+    try {
+
+        const response =  await axios.get(`https://api.github.com/users/${user}`)
+        console.log(response.data);
+
+    } catch (error) {
+        
+        console.log('Usuario não existe');
+    
+   }
+}
+   buscaUsuario('diego3g');
+
+
+/*
+
 class Github {
      static async  getRepositories(repo) {
        try {
@@ -23,7 +41,7 @@ class Github {
 
 
 
-/*
+
 
 async function getUserFromGithub(user) {
     try {
@@ -43,7 +61,7 @@ getUserFromGithub('diego3g124123');
 
 
 // Funão delay aciona o .then após 1s
-/*
+
 const delay = () => new Promise(resolve => setTimeout(resolve, 3000));
 
 
